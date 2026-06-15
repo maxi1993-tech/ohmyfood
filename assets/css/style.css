@@ -62,6 +62,7 @@ html {
 body {
   margin: 0;
   min-height: 100dvh;
+  line-height: 1;
 }
 
 .sr-only {
@@ -83,6 +84,22 @@ body {
 .header__logo,
 .footer__logo {
   font-family: "Shrikhand", sans-serif;
+}
+
+.header__logo {
+  font-size: 30px;
+}
+
+.footer__logo {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.header {
+  min-height: 63px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
