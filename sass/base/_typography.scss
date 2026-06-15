@@ -1,8 +1,10 @@
+@use "../abstracts/variables" as *;
+
 body {
   font-family: $ff-roboto;
 }
 
-h1,
-h2 {
+.header__logo,
+.footer__logo {
   font-family: $ff-shrikhand;
 }
