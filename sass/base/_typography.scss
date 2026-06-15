@@ -8,3 +8,13 @@ body {
 .footer__logo {
   font-family: $ff-shrikhand;
 }
+
+.header__logo {
+  font-size: $fs-logo-main;
+  line-height: 1;
+}
+
+.footer__logo {
+  font-size: $fs-footer-logo;
+  color: $color-white;
+}
