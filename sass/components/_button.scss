@@ -1,0 +1,12 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.button {
+  background: $gradient-primary;
+  color: $color-white;
+  width: 218px;
+  height: 50px;
+  border-radius: $radius-button;
+  font-weight: $fw-medium;
+  @include flex-center;
+}

@@ -1,8 +1,7 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .header {
   min-height: 63px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
 }
