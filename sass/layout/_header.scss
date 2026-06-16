@@ -4,4 +4,7 @@
 .header {
   min-height: 63px;
   @include flex-center;
+  box-shadow: $shadow-header;
+  position: relative;
+  z-index: 1;
 }
