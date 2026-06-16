@@ -114,38 +114,41 @@ body {
   align-items: center;
 }
 
-.hero {
-  min-height: 340px;
-  background-color: #f6f6f6;
-  text-align: center;
-}
-.hero__location {
+.location {
   background-color: #eaeaea;
   min-height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  color: #353535;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  gap: 20px;
-  font-weight: 500;
-  color: #353535;
+  gap: 15px;
+}
+
+.hero {
+  min-height: 340px;
+  background-color: #f6f6f6;
 }
 .hero__container {
+  padding: 40px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 35px;
-  padding: 40px 0 0 0;
 }
 .hero__heading {
+  text-align: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 20px;
 }
 .hero__title {
   font-size: 24px;
   font-weight: 700;
+  width: 275px;
 }
 .hero__subtitle {
   font-size: 18px;
