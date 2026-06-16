@@ -16,6 +16,7 @@ $gradient-primary: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
 $shadow-button: 0px 4px 10px rgba(0, 0, 0, 0.25);
 $shadow-location: 0px 4px 4px rgba(0, 0, 0, 0.25);
 $shadow-header: 0px 2px 4px rgba(0, 0, 0, 0.15);
+$shadow-step: 0px 4px 15px rgba(0, 0, 0, 0.15);
 
 // typography
 $ff-shrikhand: "Shrikhand", sans-serif;
@@ -44,7 +45,8 @@ $fw-bold: 700;
 
 // radius
 $radius-button: 25px;
-$radius-step: 100px;
+$radius-number: 100%;
+$radius-step: 20px;
 $radius-card: 15px;
 $radius-page: 40px;
 $radius-dish: 15px;
