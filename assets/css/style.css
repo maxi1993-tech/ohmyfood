@@ -212,4 +212,19 @@ body {
   left: -12px;
 }
 
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 60px 20px;
+}
+.restaurant__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+.restaurant__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

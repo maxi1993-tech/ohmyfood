@@ -93,3 +93,20 @@
     left: -12px;
   }
 }
+
+.restaurant {
+  background-color: $bg-grey;
+  padding: 60px 20px;
+
+  &__title {
+    font-size: $fs-title;
+    font-weight: $fw-bold;
+    padding-bottom: 25px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
