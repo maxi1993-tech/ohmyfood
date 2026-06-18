@@ -159,6 +159,30 @@ body {
   font-size: 22px;
 }
 
+.footer {
+  background-color: #353535;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer__logo {
+  line-height: 1.5;
+}
+.footer__list {
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__link {
+  display: flex;
+  gap: 5px;
+}
+.footer__icon {
+  font-size: 11px;
+}
+
 .header {
   min-height: 63px;
   display: flex;

@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer {
+  background-color: $bg-dark;
+  padding: 22px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__logo {
+    line-height: 1.5;
+  }
+
+  &__list {
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  &__link {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__icon {
+    font-size: 11px;
+  }
+}
