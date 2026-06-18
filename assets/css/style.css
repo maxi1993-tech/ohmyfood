@@ -112,6 +112,53 @@ body {
   align-items: center;
 }
 
+.card {
+  width: 340px;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card__badge {
+  background-color: #99e2d0;
+  color: #008766;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.card__img {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  object-position: bottom center;
+}
+.card__img--center {
+  object-position: center 60%;
+}
+.card__content {
+  background-color: #ffffff;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+.card__subtitle {
+  font-size: 17px;
+  font-weight: 300;
+}
+.card__icon {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 22px;
+}
+
 .header {
   min-height: 63px;
   display: flex;
@@ -214,16 +261,17 @@ body {
 
 .restaurant {
   background-color: #f6f6f6;
-  padding: 60px 20px;
+  padding: 60px 0;
 }
 .restaurant__title {
   font-size: 24px;
   font-weight: 700;
-  padding-bottom: 25px;
+  padding: 0 0 25px 18px;
 }
 .restaurant__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 

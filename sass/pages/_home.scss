@@ -96,17 +96,18 @@
 
 .restaurant {
   background-color: $bg-grey;
-  padding: 60px 20px;
+  padding: 60px 0;
 
   &__title {
     font-size: $fs-title;
     font-weight: $fw-bold;
-    padding-bottom: 25px;
+    padding: 0 0 25px 18px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
   }
 }
