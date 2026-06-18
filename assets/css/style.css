@@ -173,14 +173,16 @@ body {
   color: #ffffff;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 7px;
 }
 .footer__link {
   display: flex;
-  gap: 5px;
+  gap: 10px;
+  line-height: 1.2;
 }
 .footer__icon {
-  font-size: 11px;
+  fill: #ffffff;
 }
 
 .header {

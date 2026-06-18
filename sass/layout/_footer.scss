@@ -16,15 +16,17 @@
     color: $color-white;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 7px;
   }
 
   &__link {
     display: flex;
-    gap: 5px;
+    gap: 10px;
+    line-height: 1.2;
   }
 
   &__icon {
-    font-size: 11px;
+    fill: $color-white;
   }
 }
