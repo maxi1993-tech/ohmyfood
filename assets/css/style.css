@@ -241,7 +241,7 @@ body {
 .how-it-works__title {
   font-size: 24px;
   font-weight: 700;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
 }
 .how-it-works__list {
   display: flex;
@@ -262,6 +262,12 @@ body {
   gap: 30px;
   padding-left: 40px;
   position: relative;
+}
+.how-it-works__icon {
+  fill: #7e7e7e;
+}
+.how-it-works__icon--purple {
+  fill: #9356dc;
 }
 .how-it-works__text {
   font-weight: 500;
@@ -285,12 +291,12 @@ body {
 
 .restaurant {
   background-color: #f6f6f6;
-  padding: 60px 0;
+  padding: 65px 0;
 }
 .restaurant__title {
   font-size: 24px;
   font-weight: 700;
-  padding: 0 0 25px 18px;
+  padding: 0 0 20px 18px;
 }
 .restaurant__list {
   display: flex;
