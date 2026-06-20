@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.dish {
+  background-color: $color-white;
+  padding: 15px;
+  border-radius: $radius-dish;
+
+  &__title {
+    font-size: $fs-dish-title;
+    font-weight: $fw-medium;
+    padding-bottom: 6px;
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__subtitle {
+    font-size: $fs-dish-subtitle;
+    font-weight: $fw-light;
+  }
+
+  &__price {
+    font-size: $fs-dish-price;
+    font-weight: $fw-bold;
+  }
+}

@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.menu {
+  background-color: $bg-grey;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  &__section-title {
+    font-size: $dish-section-title;
+    font-weight: $fw-light;
+    text-transform: uppercase;
+    padding-bottom: 13px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  &__button {
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+  }
+}
