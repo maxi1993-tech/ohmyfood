@@ -10,4 +10,8 @@
   box-shadow: $shadow-button;
   font-weight: $fw-medium;
   @include flex-center;
+
+  &--order {
+    width: 186px;
+  }
 }

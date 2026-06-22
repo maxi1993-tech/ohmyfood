@@ -111,6 +111,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.button--order {
+  width: 186px;
+}
 
 .card {
   width: 340px;
@@ -359,9 +362,6 @@ body {
   padding-top: 40px;
   display: flex;
   justify-content: center;
-}
-.menu .button--order {
-  width: 186px;
 }
 
 .restaurant {
