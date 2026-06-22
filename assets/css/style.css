@@ -176,9 +176,9 @@ body {
   background-color: #99e2d0;
   color: #004231;
   position: absolute;
-  top: 15px;
-  right: 15px;
-  padding: 7px;
+  top: 13px;
+  right: 14px;
+  padding: 8px 12px;
   font-size: 0.875rem;
   font-weight: 500;
 }
