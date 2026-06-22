@@ -2,12 +2,12 @@
 @use "abstracts/mixins";
 @use "base/reset";
 @use "base/typography";
-@use "components/button";
-@use "components/card";
 @use "layout/footer";
 @use "layout/header";
+@use "components/button";
+@use "components/card";
+@use "components/dish";
 @use "pages/home";
 @use "pages/how-it-works";
 @use "pages/restaurant-page";
 @use "pages/restaurants";
-@use "components/dish";
