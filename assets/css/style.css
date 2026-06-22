@@ -198,6 +198,17 @@ body {
   z-index: 1;
   padding: 20px 0 13px 0;
 }
+.header__link {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+.header__icon {
+  color: #353535;
+  position: absolute;
+  left: 24px;
+  top: 23px;
+}
 
 .location {
   background-color: #eaeaea;
@@ -293,18 +304,6 @@ body {
   align-items: center;
   position: absolute;
   left: -12px;
-}
-
-.header__link {
-  position: relative;
-  width: 30px;
-  height: 30px;
-}
-.header__icon {
-  color: #353535;
-  position: absolute;
-  left: 24px;
-  top: 23px;
 }
 
 .main__img {

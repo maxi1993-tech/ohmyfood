@@ -1,21 +1,6 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.header {
-  &__link {
-    position: relative;
-    width: 30px;
-    height: 30px;
-  }
-
-  &__icon {
-    color: $bg-dark;
-    position: absolute;
-    left: 24px;
-    top: 23px;
-  }
-}
-
 .main {
   &__img {
     margin-bottom: -55px;
