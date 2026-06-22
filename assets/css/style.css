@@ -95,11 +95,11 @@ body {
 }
 
 .header__logo {
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 .footer__logo {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #ffffff;
 }
 
@@ -179,7 +179,7 @@ body {
   top: 15px;
   right: 15px;
   padding: 7px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 .card__img {
@@ -198,12 +198,12 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 .card__title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   padding-bottom: 10px;
 }
 .card__subtitle {
-  font-size: 17px;
+  font-size: 1.0625rem;
   font-weight: 300;
 }
 .card__icon {
@@ -219,7 +219,7 @@ body {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
 .dish__title {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   padding-bottom: 6px;
 }
@@ -228,11 +228,11 @@ body {
   justify-content: space-between;
 }
 .dish__subtitle {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 300;
 }
 .dish__price {
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 700;
 }
 
@@ -268,12 +268,12 @@ body {
   gap: 20px;
 }
 .hero__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   width: 275px;
 }
 .hero__subtitle {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
 }
 
@@ -282,7 +282,7 @@ body {
   padding: 50px 20px 65px 20px;
 }
 .how-it-works__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   padding-bottom: 30px;
 }
@@ -321,7 +321,7 @@ body {
   background-color: #9356dc;
   color: #ffffff;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875rem;
   width: 24px;
   height: 24px;
   border-radius: 100%;
@@ -359,11 +359,11 @@ body {
 }
 .menu__title {
   font-family: "Shrikhand", sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 400;
 }
 .menu__section-title {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
   padding-bottom: 13px;
@@ -394,7 +394,7 @@ body {
   padding: 65px 0;
 }
 .restaurant__title {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
   padding: 0 0 20px 18px;
 }
