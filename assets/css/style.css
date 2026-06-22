@@ -10,6 +10,10 @@ svg {
   display: block;
 }
 
+svg {
+  fill: currentColor;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -204,7 +208,7 @@ body {
   height: 30px;
 }
 .header__icon {
-  color: #353535;
+  fill: #353535;
   position: absolute;
   left: 24px;
   top: 23px;

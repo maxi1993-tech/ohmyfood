@@ -3,11 +3,17 @@
 *::after {
   box-sizing: border-box;
 }
+
 img,
 svg {
   max-width: 100%;
   display: block;
 }
+
+svg {
+  fill: currentColor;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -18,10 +24,12 @@ ol {
   padding: 0;
   margin: 0;
 }
+
 a {
   text-decoration: none;
   color: inherit;
 }
+
 button {
   cursor: pointer;
   border: none;
@@ -29,6 +37,7 @@ button {
   margin: 0;
   padding: 0;
 }
+
 h1,
 h2,
 h3,
@@ -40,10 +49,12 @@ h6 {
   margin: 0;
   padding: 0;
 }
+
 p {
   margin: 0;
   padding: 0;
 }
+
 input,
 button,
 textarea,
