@@ -12,7 +12,7 @@
     position: absolute;
     top: 13px;
     right: 14px;
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     font-size: $fs-badge;
     font-weight: $fw-medium;
   }
@@ -30,7 +30,7 @@
 
   &__content {
     background-color: $color-white;
-    padding: 15px;
+    padding: 0.9375rem;
     position: relative;
     box-shadow: $shadow-card;
   }
@@ -38,7 +38,7 @@
   &__title {
     font-size: $fs-card-title;
     font-weight: $fw-bold;
-    padding-bottom: 10px;
+    padding-bottom: 0.625rem;
   }
 
   &__subtitle {

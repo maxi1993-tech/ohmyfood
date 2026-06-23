@@ -3,19 +3,19 @@
 
 .how-it-works {
   background-color: $color-white;
-  padding: 50px 20px 65px 20px;
+  padding: 3.125rem 1.25rem 4.0625rem 1.25rem;
 
   &__title {
     font-size: $fs-title;
     font-weight: $fw-bold;
-    padding-bottom: 30px;
+    padding-bottom: 1.875rem;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    gap: 25px;
+    gap: 1.5625rem;
     list-style: none;
     counter-reset: steps;
   }
@@ -28,8 +28,8 @@
     box-shadow: $shadow-step;
     display: flex;
     align-items: center;
-    gap: 30px;
-    padding-left: 40px;
+    gap: 1.875rem;
+    padding-left: 2.5rem;
     position: relative;
   }
 

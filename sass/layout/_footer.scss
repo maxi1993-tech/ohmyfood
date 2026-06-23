@@ -2,10 +2,10 @@
 
 .footer {
   background-color: $bg-dark;
-  padding: 22px 25px;
+  padding: 1.375rem 1.5625rem;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 
   &__logo {
     line-height: 1.5;
@@ -15,12 +15,12 @@
     color: $color-white;
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 0.4375rem;
   }
 
   &__link {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     line-height: 1.2;
   }
 }

@@ -15,10 +15,10 @@
 
 .menu {
   background-color: $bg-grey;
-  padding: 40px 13px;
+  padding: 2.5rem 0.8125rem;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 2.5rem;
   border-radius: $radius-page;
   position: relative;
   z-index: 1;
@@ -26,7 +26,7 @@
   &__content-title {
     display: flex;
     justify-content: space-between;
-    padding-right: 25px;
+    padding-right: 1.5625rem;
   }
 
   &__title {
@@ -39,9 +39,9 @@
     font-size: $fs-menu-section-title;
     font-weight: $fw-light;
     text-transform: uppercase;
-    padding-bottom: 13px;
+    padding-bottom: 0.8125rem;
     position: relative;
-    margin-bottom: 7px;
+    margin-bottom: 0.4375rem;
   }
 
   &__section-title::after {
@@ -56,11 +56,11 @@
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 0.75rem;
   }
 
   &__button {
-    padding-top: 40px;
+    padding-top: 2.5rem;
     display: flex;
     justify-content: center;
   }
