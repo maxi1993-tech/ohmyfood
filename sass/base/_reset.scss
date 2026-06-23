@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 *,
 *::before,
 *::after {
@@ -60,6 +62,15 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+.restaurant__link:focus {
+  outline: 2px solid black;
+  border-radius: $radius-card;
+}
+
+button:focus {
+  outline: 2px solid black;
 }
 
 html {

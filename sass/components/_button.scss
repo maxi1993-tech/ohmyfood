@@ -10,8 +10,16 @@
   box-shadow: $shadow-button;
   font-weight: $fw-medium;
   @include flex-center;
+  transition:
+    filter 0.2s ease,
+    box-shadow 0.2s ease;
 
   &--order {
     width: 186px;
+  }
+
+  &:hover {
+    filter: brightness(1.15);
+    box-shadow: $shadow-button-hover;
   }
 }

@@ -62,6 +62,15 @@ select {
   font: inherit;
 }
 
+.restaurant__link:focus {
+  outline: 2px solid black;
+  border-radius: 15px;
+}
+
+button:focus {
+  outline: 2px solid black;
+}
+
 html {
   font-size: 100%;
   overflow-x: hidden;
@@ -156,9 +165,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: filter 0.2s ease, box-shadow 0.2s ease;
 }
 .button--order {
   width: 186px;
+}
+.button:hover {
+  filter: brightness(1.15);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
 }
 
 .card {
@@ -397,6 +411,9 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 1.25rem;
+}
+.restaurant__link {
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
