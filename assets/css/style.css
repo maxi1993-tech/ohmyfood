@@ -126,10 +126,8 @@ body {
 }
 
 .header {
-  min-height: 63px;
   display: flex;
   justify-content: center;
-  align-items: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   position: relative;
   z-index: 1;
@@ -252,7 +250,6 @@ body {
 .hero__container {
   padding: 40px 0 0 0;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 35px;
