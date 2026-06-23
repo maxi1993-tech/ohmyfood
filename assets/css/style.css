@@ -124,9 +124,6 @@ body {
   gap: 10px;
   line-height: 1.2;
 }
-.footer__icon {
-  fill: #ffffff;
-}
 
 .header {
   min-height: 63px;

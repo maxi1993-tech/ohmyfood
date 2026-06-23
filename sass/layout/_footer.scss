@@ -1,5 +1,4 @@
 @use "../abstracts/variables" as *;
-@use "../abstracts/mixins" as *;
 
 .footer {
   background-color: $bg-dark;
@@ -23,9 +22,5 @@
     display: flex;
     gap: 10px;
     line-height: 1.2;
-  }
-
-  &__icon {
-    fill: $color-white;
   }
 }
