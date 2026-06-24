@@ -3,7 +3,7 @@
 
 .how-it-works {
   background-color: $color-white;
-  padding: 3.125rem 1.25rem 4.0625rem 1.25rem;
+  padding: 3rem 1.25rem 4.0625rem 1.25rem;
 
   &__title {
     font-size: $fs-title;
@@ -43,6 +43,7 @@
 
   &__text {
     font-weight: $fw-medium;
+    text-align: left;
   }
 
   &__item::before {
