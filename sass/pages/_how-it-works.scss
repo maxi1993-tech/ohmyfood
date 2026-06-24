@@ -12,10 +12,12 @@
   }
 
   &__list {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 1.5625rem;
+    @include flex-center(
+      $direction: column,
+      $justify: null,
+      $align: flex-end,
+      $gap: 1.5625rem
+    );
     list-style: none;
     counter-reset: steps;
   }
@@ -26,9 +28,7 @@
     min-height: 72px;
     border-radius: $radius-step;
     box-shadow: $shadow-step;
-    display: flex;
-    align-items: center;
-    gap: 1.875rem;
+    @include flex-center($justify: null, $gap: 1.875rem);
     padding-left: 2.5rem;
     position: relative;
   }
