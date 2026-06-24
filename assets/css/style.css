@@ -130,6 +130,7 @@ body {
 }
 .footer__link {
   display: flex;
+  align-items: center;
   gap: 0.625rem;
   line-height: 1.2;
 }
@@ -219,6 +220,8 @@ body {
   position: absolute;
   top: 20px;
   right: 25px;
+  stroke: #101010;
+  fill: none;
 }
 
 .dish {
@@ -255,6 +258,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 0.9375rem;
+}
+.location__icon {
+  fill: #353535;
 }
 
 .hero {
@@ -369,6 +375,10 @@ body {
   font-family: "Shrikhand", sans-serif;
   font-size: 1.75rem;
   font-weight: 400;
+}
+.menu__heart {
+  fill: none;
+  stroke: #101010;
 }
 .menu__section-title {
   font-size: 1rem;

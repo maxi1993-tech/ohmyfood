@@ -9,6 +9,10 @@
   color: $bg-dark;
   @include flex-center;
   gap: 0.9375rem;
+
+  &__icon {
+    fill: $bg-dark;
+  }
 }
 
 .hero {

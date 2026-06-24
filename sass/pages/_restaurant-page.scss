@@ -35,6 +35,11 @@
     font-weight: $fw-regular;
   }
 
+  &__heart {
+    fill: none;
+    stroke: #101010;
+  }
+
   &__section-title {
     font-size: $fs-menu-section-title;
     font-weight: $fw-light;
