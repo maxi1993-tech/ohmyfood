@@ -15,7 +15,7 @@
     @include flex-center(
       $direction: column,
       $justify: null,
-      $align: flex-end,
+      $align: center,
       $gap: 1.5625rem
     );
     list-style: none;
@@ -23,7 +23,8 @@
   }
 
   &__item {
-    width: 322px;
+    max-width: 322px;
+    width: 100%;
     background-color: $bg-grey;
     min-height: 72px;
     border-radius: $radius-step;

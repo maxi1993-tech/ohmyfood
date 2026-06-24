@@ -1,7 +1,6 @@
 @use "../abstracts/variables" as *;
 
 .card {
-  width: 340px;
   position: relative;
   border-radius: $radius-card;
   overflow: hidden;

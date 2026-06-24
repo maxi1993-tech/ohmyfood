@@ -3,16 +3,21 @@
 
 .restaurant {
   background-color: $bg-grey;
-  padding: 3.9rem 0;
+  padding: 3.9rem 1.1rem;
 
   &__title {
     font-size: $fs-title;
     font-weight: $fw-bold;
-    padding: 0 0 1.25rem 1.125rem;
+    padding-bottom: 1.25rem;
   }
 
   &__list {
-    @include flex-center($justify: null, $direction: column, $gap: 1.25rem);
+    max-width: 385px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin: 0 auto;
   }
 
   &__link {
