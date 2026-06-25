@@ -283,7 +283,9 @@ body {
 .hero__title {
   font-size: clamp(1.5rem, 1.148rem + 1.5vw, 2.5rem);
   font-weight: 700;
-  width: 275px;
+}
+.hero__title-nowrap {
+  white-space: nowrap;
 }
 .hero__subtitle {
   font-size: 1.125rem;
@@ -344,7 +346,8 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  left: -12px;
+  left: -7px;
+  top: 28px;
 }
 
 .main__img {
@@ -410,7 +413,7 @@ body {
 
 .restaurant {
   background-color: #f6f6f6;
-  padding: 3.9rem 1.1rem;
+  padding: 3.9rem 1.09rem 4rem 1.09rem;
 }
 .restaurant__title {
   font-size: 1.5rem;

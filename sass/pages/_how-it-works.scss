@@ -59,6 +59,7 @@
     border-radius: $radius-number;
     @include flex-center;
     position: absolute;
-    left: -12px;
+    left: -7px;
+    top: 28px;
   }
 }

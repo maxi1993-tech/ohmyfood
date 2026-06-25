@@ -34,7 +34,10 @@
   &__title {
     font-size: clamp($fs-title, calc(1.148rem + 1.5vw), $fs-title-desktop);
     font-weight: $fw-bold;
-    width: 275px;
+  }
+
+  &__title-nowrap {
+    white-space: nowrap;
   }
 
   &__subtitle {
