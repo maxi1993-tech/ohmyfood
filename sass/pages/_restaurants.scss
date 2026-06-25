@@ -5,6 +5,10 @@
   background-color: $bg-grey;
   padding: 3.9rem 1.09rem 4rem 1.09rem;
 
+  @include respond-to($lg) {
+    padding: 2rem 1.5rem;
+  }
+
   &__container {
     max-width: 1080px;
     margin: 0 auto;
