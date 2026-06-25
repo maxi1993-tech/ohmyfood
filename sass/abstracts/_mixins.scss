@@ -18,3 +18,9 @@
   flex-direction: column;
   gap: $gap;
 }
+
+@mixin respond-to($breakpoint) {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}

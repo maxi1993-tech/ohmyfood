@@ -104,7 +104,7 @@ body {
 }
 
 .header__logo {
-  font-size: 1.875rem;
+  font-size: clamp(1.875rem, 1.698rem + 0.754vw, 2.377rem);
 }
 
 .footer__logo {
@@ -122,11 +122,23 @@ body {
 .footer__logo {
   line-height: 1.5;
 }
+@media (min-width: 768px) {
+  .footer__logo {
+    text-align: center;
+  }
+}
 .footer__list {
   color: #ffffff;
   display: flex;
   flex-direction: column;
   gap: 0.4375rem;
+}
+@media (min-width: 768px) {
+  .footer__list {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5625rem;
+  }
 }
 .footer__link {
   display: flex;
@@ -263,11 +275,10 @@ body {
 }
 
 .hero {
-  min-height: 340px;
   background-color: #f6f6f6;
 }
 .hero__container {
-  padding: 2.5rem 0 0 0;
+  padding: 2.5rem 0 3.5rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -294,7 +305,11 @@ body {
 
 .how-it-works {
   background-color: #ffffff;
-  padding: 3rem 1.25rem 4.0625rem 1.25rem;
+  padding: 3.2rem 1.25rem 4.0625rem 1.25rem;
+}
+.how-it-works__container {
+  max-width: 1053px;
+  margin: 0 auto;
 }
 .how-it-works__title {
   font-size: 1.5rem;
@@ -309,6 +324,13 @@ body {
   list-style: none;
   counter-reset: steps;
 }
+@media (min-width: 768px) {
+  .how-it-works__list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+}
 .how-it-works__item {
   max-width: 322px;
   width: 100%;
@@ -321,6 +343,12 @@ body {
   gap: 1.875rem;
   padding-left: 2.5rem;
   position: relative;
+}
+@media (min-width: 768px) {
+  .how-it-works__item {
+    padding-left: 1.5rem;
+    gap: 0.5rem;
+  }
 }
 .how-it-works__icon {
   fill: #7e7e7e;
@@ -415,10 +443,14 @@ body {
   background-color: #f6f6f6;
   padding: 3.9rem 1.09rem 4rem 1.09rem;
 }
+.restaurant__container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
 .restaurant__title {
   font-size: 1.5rem;
   font-weight: 700;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.3rem;
 }
 .restaurant__list {
   max-width: 385px;
@@ -427,6 +459,13 @@ body {
   grid-template-columns: 1fr;
   gap: 1.25rem;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .restaurant__list {
+    grid-template-columns: 1fr 1fr;
+    max-width: 1080px;
+    gap: 2rem;
+  }
 }
 .restaurant__link {
   display: block;

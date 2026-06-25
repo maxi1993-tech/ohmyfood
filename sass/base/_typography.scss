@@ -10,7 +10,11 @@ body {
 }
 
 .header__logo {
-  font-size: $fs-logo-main;
+  font-size: clamp(
+    $fs-logo-main,
+    calc(1.698rem + 0.754vw),
+    $fs-logo-main-desktop
+  );
 }
 
 .footer__logo {
