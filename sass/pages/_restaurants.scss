@@ -18,6 +18,10 @@
     font-size: $fs-title;
     font-weight: $fw-bold;
     padding-bottom: 1.3rem;
+
+    @include respond-to($xl) {
+      padding-bottom: 1.9rem;
+    }
   }
 
   &__list {
@@ -32,6 +36,11 @@
       grid-template-columns: 1fr 1fr;
       max-width: 1080px;
       gap: 2rem;
+    }
+
+    @include respond-to($xl) {
+      row-gap: 3rem;
+      column-gap: 6rem;
     }
   }
 

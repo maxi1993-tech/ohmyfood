@@ -2,7 +2,8 @@
 @use "../abstracts/mixins" as *;
 
 .header {
-  @include flex-center($align: null);
+  height: clamp(3.9375rem, calc(3.2114rem + 3.098vw), 6rem);
+  @include flex-center;
   box-shadow: $shadow-header;
   position: relative;
   z-index: 1;
