@@ -181,6 +181,11 @@ body {
   left: 24px;
   top: 23px;
 }
+@media (min-width: 768px) {
+  .header__icon {
+    top: 39px;
+  }
+}
 
 .button {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
@@ -446,14 +451,26 @@ body {
 .main__img {
   margin-bottom: -55px;
   width: 100%;
-  height: 275px;
+  height: clamp(17.1875rem, 14.81rem + 10.14vw, 23.9375rem);
   object-fit: cover;
+}
+@media (min-width: 1440px) {
+  .main__img {
+    margin-bottom: -40px;
+  }
 }
 .main__img--center {
   object-position: center center;
 }
+@media (min-width: 1024px) {
+  .main__img--center {
+    object-position: center 60%;
+  }
+}
 
 .menu {
+  width: 100%;
+  max-width: clamp(23.4375rem, 8.4728rem + 63.849vw, 65.9375rem);
   background-color: #f6f6f6;
   padding: 2.5rem 0.8125rem;
   display: flex;
@@ -462,11 +479,25 @@ body {
   border-radius: 40px 40px 0 0;
   position: relative;
   z-index: 1;
+  margin: 0 auto;
+}
+@media (min-width: 1440px) {
+  .menu {
+    padding: 3.8rem 0.8125rem 2.5rem 0.8125rem;
+    gap: 2.8rem;
+  }
 }
 .menu__content-title {
   display: flex;
   justify-content: space-between;
-  padding-right: 1.5625rem;
+  max-width: 319px;
+}
+@media (min-width: 768px) {
+  .menu__content-title {
+    max-width: 307px;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 .menu__title {
   font-family: "Shrikhand", sans-serif;
@@ -476,6 +507,11 @@ body {
 .menu__heart {
   fill: none;
   stroke: #101010;
+}
+.menu__section {
+  width: 100%;
+  max-width: clamp(21.8125rem, 15.54rem + 26.76vw, 39.625rem);
+  margin: 0 auto;
 }
 .menu__section-title {
   font-size: 1rem;

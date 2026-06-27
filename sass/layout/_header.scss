@@ -24,5 +24,9 @@
     position: absolute;
     left: 24px;
     top: 23px;
+
+    @include respond-to($md) {
+      top: 39px;
+    }
   }
 }

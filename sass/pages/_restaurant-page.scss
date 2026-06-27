@@ -5,27 +5,49 @@
   &__img {
     margin-bottom: -55px;
     width: 100%;
-    height: 275px;
+    height: clamp(17.1875rem, calc(14.81rem + 10.14vw), 23.9375rem);
     object-fit: cover;
+
+    @include respond-to($xl) {
+      margin-bottom: -40px;
+    }
   }
 
   &__img--center {
     object-position: center center;
+
+    @include respond-to($lg) {
+      object-position: center 60%;
+    }
   }
 }
 
 .menu {
+  width: 100%;
+  max-width: clamp(23.4375rem, calc(8.4728rem + 63.849vw), 65.9375rem);
   background-color: $bg-grey;
   padding: 2.5rem 0.8125rem;
   @include flex-column($gap: 2.5rem);
   border-radius: $radius-page;
   position: relative;
   z-index: 1;
+  margin: 0 auto;
+
+  @include respond-to($xl) {
+    padding: 3.8rem 0.8125rem 2.5rem 0.8125rem;
+    gap: 2.8rem;
+  }
 
   &__content-title {
     display: flex;
     justify-content: space-between;
-    padding-right: 1.5625rem;
+    max-width: 319px;
+
+    @include respond-to($md) {
+      max-width: 307px;
+      width: 100%;
+      margin: 0 auto;
+    }
   }
 
   &__title {
@@ -37,6 +59,12 @@
   &__heart {
     fill: none;
     stroke: #101010;
+  }
+
+  &__section {
+    width: 100%;
+    max-width: clamp(21.8125rem, calc(15.54rem + 26.76vw), 39.625rem);
+    margin: 0 auto;
   }
 
   &__section-title {
