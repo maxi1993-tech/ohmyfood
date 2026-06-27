@@ -224,6 +224,16 @@ body {
   object-fit: cover;
   object-position: bottom center;
 }
+@media (min-width: 1024px) {
+  .card__img {
+    object-position: center 60%;
+  }
+}
+@media (min-width: 1440px) {
+  .card__img {
+    object-position: center 60%;
+  }
+}
 .card__img--center {
   object-position: center 60%;
 }

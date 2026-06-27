@@ -1,4 +1,5 @@
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 .card {
   position: relative;
@@ -21,6 +22,14 @@
     height: 175px;
     object-fit: cover;
     object-position: bottom center;
+
+    @include respond-to($lg) {
+      object-position: center 60%;
+    }
+
+    @include respond-to($xl) {
+      object-position: center 60%;
+    }
   }
 
   &__img--center {
