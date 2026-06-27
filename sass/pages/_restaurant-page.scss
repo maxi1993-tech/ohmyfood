@@ -16,7 +16,7 @@
   &__img--center {
     object-position: center center;
 
-    @include respond-to($lg) {
+    @include respond-to($md) {
       object-position: center 60%;
     }
   }

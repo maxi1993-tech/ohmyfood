@@ -462,7 +462,7 @@ body {
 .main__img--center {
   object-position: center center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .main__img--center {
     object-position: center 60%;
   }
