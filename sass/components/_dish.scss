@@ -5,8 +5,6 @@
   border-radius: $radius-dish;
   box-shadow: $shadow-dish;
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
   position: relative;
 
   &__content {
@@ -19,6 +17,9 @@
     font-size: $fs-dish-title;
     font-weight: $fw-medium;
     padding-bottom: 0.375rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &__details {
