@@ -267,9 +267,17 @@ body {
 
 .dish {
   background-color: #ffffff;
-  padding: 0.9375rem;
   border-radius: 15px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  position: relative;
+}
+.dish__content {
+  padding: 0.9375rem;
+  width: 100%;
+  min-width: 0;
 }
 .dish__title {
   font-size: 1.125rem;
@@ -281,12 +289,45 @@ body {
   justify-content: space-between;
 }
 .dish__subtitle {
+  min-width: 0;
   font-size: 0.9375rem;
   font-weight: 300;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .dish__price {
   font-size: 0.9375rem;
   font-weight: 700;
+}
+.dish::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/icons/check-circle.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 25px;
+  right: -20px;
+  transition: 1s ease;
+  opacity: 0;
+}
+.dish:hover::before {
+  right: 18px;
+  opacity: 1;
+  rotate: -360deg;
+}
+.dish::after {
+  content: "";
+  width: 0;
+  height: 69px;
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  transition: 1s ease;
+}
+.dish:hover::after {
+  width: 69px;
 }
 
 .location {

@@ -2,9 +2,18 @@
 
 .dish {
   background-color: $color-white;
-  padding: 0.9375rem;
   border-radius: $radius-dish;
   box-shadow: $shadow-dish;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  position: relative;
+
+  &__content {
+    padding: 0.9375rem;
+    width: 100%;
+    min-width: 0;
+  }
 
   &__title {
     font-size: $fs-dish-title;
@@ -18,12 +27,49 @@
   }
 
   &__subtitle {
+    min-width: 0;
     font-size: $fs-dish-subtitle;
     font-weight: $fw-light;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &__price {
     font-size: $fs-dish-price;
     font-weight: $fw-bold;
+  }
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icons/check-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 25px;
+    right: -20px;
+    transition: 1s ease;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    right: 18px;
+    opacity: 1;
+    rotate: -360deg;
+  }
+
+  &::after {
+    content: "";
+    width: 0;
+    height: 69px;
+    background-color: $color-tertiary;
+    border-radius: $radius-check;
+    transition: 1s ease;
+  }
+
+  &:hover::after {
+    width: 69px;
   }
 }
