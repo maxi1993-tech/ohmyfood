@@ -41,6 +41,7 @@
   &__content-title {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     max-width: 319px;
 
     @include respond-to($md) {

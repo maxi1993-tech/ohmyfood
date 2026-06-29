@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.heart__fill {
+  fill: url(#heart-gradient);
+  transition: transform 1s ease-in-out;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.heart:hover .heart__fill {
+  fill: url(#heart-gradient);
+  transition:
+    transform 1s ease-in-out,
+    stroke 1s ease-in-out;
+  transform: scale(1);
+  stroke: url(#heart-gradient);
+}

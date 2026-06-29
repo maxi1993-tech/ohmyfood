@@ -316,7 +316,7 @@ body {
   opacity: 0;
 }
 .dish:hover::before {
-  right: 18px;
+  right: 20px;
   opacity: 1;
   rotate: -360deg;
 }
@@ -330,6 +330,20 @@ body {
 }
 .dish:hover::after {
   width: 69px;
+}
+
+.heart__fill {
+  fill: url(#heart-gradient);
+  transition: transform 1s ease-in-out;
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.heart:hover .heart__fill {
+  fill: url(#heart-gradient);
+  transition: transform 1s ease-in-out, stroke 1s ease-in-out;
+  transform: scale(1);
+  stroke: url(#heart-gradient);
 }
 
 .location {
@@ -533,6 +547,7 @@ body {
 .menu__content-title {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   max-width: 319px;
 }
 @media (min-width: 768px) {
