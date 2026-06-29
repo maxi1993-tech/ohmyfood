@@ -6,6 +6,7 @@
   box-shadow: $shadow-dish;
   display: flex;
   position: relative;
+  animation: dish 1s backwards;
 
   &__content {
     padding: 0.9375rem;
@@ -72,5 +73,22 @@
 
   &:hover::after {
     width: 69px;
+  }
+}
+
+@for $i from 1 through 10 {
+  .menu__item:nth-child(#{$i}) .dish {
+    animation-delay: $i * 0.1s;
+  }
+}
+
+@keyframes dish {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

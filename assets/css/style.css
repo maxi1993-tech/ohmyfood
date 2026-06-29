@@ -272,6 +272,7 @@ body {
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   display: flex;
   position: relative;
+  animation: dish 1s backwards;
 }
 .dish__content {
   padding: 0.9375rem;
@@ -332,6 +333,56 @@ body {
   width: 69px;
 }
 
+.menu__item:nth-child(1) .dish {
+  animation-delay: 0.1s;
+}
+
+.menu__item:nth-child(2) .dish {
+  animation-delay: 0.2s;
+}
+
+.menu__item:nth-child(3) .dish {
+  animation-delay: 0.3s;
+}
+
+.menu__item:nth-child(4) .dish {
+  animation-delay: 0.4s;
+}
+
+.menu__item:nth-child(5) .dish {
+  animation-delay: 0.5s;
+}
+
+.menu__item:nth-child(6) .dish {
+  animation-delay: 0.6s;
+}
+
+.menu__item:nth-child(7) .dish {
+  animation-delay: 0.7s;
+}
+
+.menu__item:nth-child(8) .dish {
+  animation-delay: 0.8s;
+}
+
+.menu__item:nth-child(9) .dish {
+  animation-delay: 0.9s;
+}
+
+.menu__item:nth-child(10) .dish {
+  animation-delay: 1s;
+}
+
+@keyframes dish {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .heart__fill {
   fill: url(#heart-gradient);
   transition: transform 1s ease-in-out;
