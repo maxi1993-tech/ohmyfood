@@ -556,6 +556,90 @@ body {
   top: 28px;
 }
 
+.loader {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  z-index: 100;
+  animation: loader-finish 3s ease forwards;
+}
+.loader__letter {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  padding: 0 30px;
+  margin: 0 -30px;
+  animation: loader 0.3s ease-in;
+}
+
+@keyframes loader-finish {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+.loader__letter:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.loader__letter:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader__letter:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.loader__letter:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.loader__letter:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.loader__letter:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.loader__letter:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.loader__letter:nth-child(8) {
+  animation-delay: 0.8s;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(90deg);
+  }
+  25% {
+    transform: scale(2);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  75% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
 .main__img {
   margin-bottom: -55px;
   width: 100%;
