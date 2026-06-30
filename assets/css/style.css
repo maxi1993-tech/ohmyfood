@@ -383,6 +383,15 @@ body {
     transform: translateY(0);
   }
 }
+@media (prefers-reduced-motion: reduce) {
+  .dish {
+    animation: none;
+  }
+  .dish::before,
+  .dish::after {
+    transition: none;
+  }
+}
 .heart__fill {
   fill: url(#heart-gradient);
   transition: transform 1s ease-in-out;
@@ -397,6 +406,14 @@ body {
   stroke: url(#heart-gradient);
 }
 
+@media (prefers-reduced-motion: reduce) {
+  .heart__fill {
+    transition: none;
+  }
+  .heart:hover .heart__fill {
+    transition: none;
+  }
+}
 .location {
   background-color: #eaeaea;
   min-height: 50px;
@@ -638,6 +655,11 @@ body {
   }
   100% {
     transform: scale(1) rotate(0deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loader__letter {
+    animation: none;
   }
 }
 .main__img {

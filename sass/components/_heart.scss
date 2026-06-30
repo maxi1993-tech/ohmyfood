@@ -16,3 +16,13 @@
   transform: scale(1);
   stroke: url(#heart-gradient);
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .heart__fill {
+    transition: none;
+  }
+
+  .heart:hover .heart__fill {
+    transition: none;
+  }
+}
